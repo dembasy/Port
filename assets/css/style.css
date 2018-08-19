@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font: normal 75%, Kollektif, Helvetica, sans-serif  ;
+  overflow: hidden;
+}
+@font-face {
+  font-family: Kollektif;
+  src: url('../css/font/Kollektif-Bold.ttf');
+  src: url('../css/font/Kollektif.ttf');
+  src: url('../css/font/Kollektif-BoldItalic.ttf');
+  src: url('../css/font/Kollektif.ttf');
+}
+@font-face {
+  font-family: CaesarDressing-Regular;
+  src: url('../css/font/CaesarDressing-Regular.ttf');
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #FAFAFA;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+	position: absolute;
+
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+h1 {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -115px;
+  z-index: 1;
+  color: #1626fb;
+  font-weight: 900;
+  font-size: 6rem;
+  font-family: Kollektif;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  font-family: Kollektif;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #1626fb;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #1626fb;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #1626fb;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #1626fb;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+.nav__logo{
+  font-family: CaesarDressing-Regular;
+  font-size:4rem;
+  font-weight: bold;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "portofolio-demba",
+  "version": "1.0.0",
+  "description": "Portofolio v1",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Sylla Demba",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^10.8.0",
+    "node-sass": "^4.9.3",
+    "sass": "^1.12.0"
+  }
+}
