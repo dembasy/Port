@@ -1,47 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Développeur web Fullstack</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Caesar+Dressing" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-
-<!-- particles.js container -->
-
-<header class="header">
-  <div id="particles-js">
-  <nav class="stroke">
-    <div class="nav__logo-box">
-      <div class="nav__logo">
-        <span>S</span>
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp;</div>
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benfits</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+      </ul>
+    </nav>
+  </div>
+  <header class="header">
+    <div class="header__logo-box">
+      <div class="header__logo">
+        <span class="u-right">S</span>
         <span>D</span>
       </div>
     </div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Downloads</a></li>
-      <li><a href="#">More</a></li>
-    </ul>
-  </nav>
-  <div class="header__text-box">
-    <h1 class="heading-primary">
-      <span class="heading-primary--main">Demba Sylla.</span><br>
-      <span class="heading-primary--sub">Développeur Web Fullstack.</span>
-    </h1>
-  </div>
-</header>
-</div>
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">DEMBA SYLLA</span>
+        <span class="heading-primary--sub">Développeur Web Fullstack. </span>
+      </h1>
+    </div>
+    <div class="middle">
+      <div class="mouse">
+        <p class="scroll">scroll</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-about">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          Presentation.
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <h3 class="heading-tertiary u-margin-bottom-small">Lorem Lorem</h3>
+          <p class="paragraph">
+            Je m'appelle Demba, j'ai 23 ans et je suis passionné par l'informatique et le numérique depuis mon plus jeune âge. C'est naturellement que j'ai fini par suivre cette voie et me réorienter dans le numérique souhaitant exercé le metier de développeur web.       </p>
+          </p>
+          <h3 class="heading-tertiary u-margin-bottom-small">E2N</h3>
+          <p class="paragraph">
+            C'est dans cette école que j'ai pu apprendre tout les procédés qui été utilisé par les développeur, les languages et technologies. Cette formation qui est basé sur 80% de pratique et 20% de théorique m'as permis d'être totalement immergé dans le domaine et de relever chaque jour des exercices et différents projets que j'ai pu réalisé.
+          </p>
+        </div>
+        <div class="col-1-of-2">
+          <div class="composition">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills-img">
 
+    </section>
+    <section class="section-projects">
 
-<!-- scripts -->
-<script src="assets/js/particles.js"></script>
-<script src="assets/js/app.js"></script>
+    </section>
+    <section class="section-contact">
 
-<!-- stats.js -->
-
-
-</body>
-</html>
+    </section>
+    <footer>
+      <div class="container">
+        <ul class="link">
+          <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href=""><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </body>
+  </html>
